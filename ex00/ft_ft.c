@@ -15,19 +15,20 @@
 #include <unistd.h>
 #include <stdio.h>
 
-
+int main()
+{
 void ft_ft(int *nbr)
 
 {
 
-	*nbr = 42;
+	int a;
+	int *b;
+	
+	a =42;
+	b =&a;
 	
 
- }
-int main(void)
-{
-	int b;
-	ft_ft(&b);
-	printf("%d\n ", b);
+	printf("%d\n" ,   a )
+	printf("%d\n ", *b);
 	return(0);
 }
